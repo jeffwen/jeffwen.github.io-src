@@ -48,6 +48,6 @@ DEFAULT_PAGINATION = 10
 # Theme for the blog
 THEME = '/Users/Jeffwen/Blog/ghblog/pelican-themes/svbhack'
 
-USER_LOGO_URL = SITEURL + '/static/images/jeff_logo.png'
+USER_LOGO_URL = SITEURL + '/images/jeff_logo.png'
 
 
