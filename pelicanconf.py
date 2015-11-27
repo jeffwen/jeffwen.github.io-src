@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Jeff Wen'
 SITENAME = u'Jeff Wen'
-SITEURL = 'http:jeffwen.github.io'
+SITEURL = 'http://jeffwen.github.io'
 
 PATH = 'content'
 
@@ -47,3 +47,7 @@ DEFAULT_PAGINATION = 10
 
 # Theme for the blog
 THEME = '/Users/Jeffwen/Blog/ghblog/pelican-themes/svbhack'
+
+USER_LOGO_URL = SITEURL + '/static/images/jeff_logo.png'
+
+

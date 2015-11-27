@@ -6,7 +6,7 @@ Slug: hello-world
 Summary: First blog post
 
 
-Hello everyone, my name is Jeff. I've started this blog to keep track of the things that I am up to and also to share about exiciting things that I am learning. Thanks for stopping by!
+Hello everyone, my name is Jeff. I've started this blog to keep track of the things that I am up to and also to share about exciting things that I am learning. Thanks for stopping by!
 
 
 ```python
