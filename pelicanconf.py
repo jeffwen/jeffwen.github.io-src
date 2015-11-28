@@ -5,10 +5,13 @@ from __future__ import unicode_literals
 AUTHOR = u'Jeff Wen'
 SITENAME = u'Jeff Wen'
 SITEURL = 'http://jeffwen.github.io'
+#SITEURL = 'http://localhost:8000'
+
 
 PATH = 'content'
 
 TIMEZONE = 'America/Los_Angeles'
+TAGLINE = 'aspiring data scientist, problem solver, wannabe tinkerer'
 
 DEFAULT_LANG = u'en'
 DEFAULT_DATE_FORMAT = ('%B %d %Y')
@@ -34,11 +37,12 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('You can modify those links in your config file', '#'),)
+# LINKS = (('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('LinkedIn', 'https://www.linkedin.com/in/wenjeff'),
+          ('GitHub', 'https://github.com/jeffwen'),
+          ('Email', 'mailto:jeff.li.wen@gmail.com'),)
 
 DEFAULT_PAGINATION = 10
 
