@@ -1,5 +1,4 @@
 /output*
-cache*
 *.pyc
 *.pid
 *.pyc
