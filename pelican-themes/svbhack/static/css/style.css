@@ -28,7 +28,6 @@ aside {
 
 aside a {
     color: White;
-    text-align: left;
 }
 aside div#user_meta {
   padding: 40px;
@@ -38,10 +37,10 @@ aside div#user_meta {
 }
 aside div#user_meta h2 {
     margin: 15px 0 5px 0;
-    font-size: 40px;
+    font-size: 45px;
 }
 aside div#user_meta p {
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
   font-size: 14px;
   font-style: italic;
 }
@@ -53,7 +52,7 @@ aside div#user_meta ul {
 }
 aside div#user_meta ul li {
   display: inline;
-  line-height: 3em;
+  line-height: 2em;
 }
 aside div#user_meta ul li a {
   padding: 15px 0px;
