@@ -1,6 +1,6 @@
-output*
+/output*
 cache*
 *.pyc
 *.pid
 *.pyc
-output
+/output

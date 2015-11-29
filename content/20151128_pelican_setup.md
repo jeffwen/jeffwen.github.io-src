@@ -5,6 +5,7 @@ Slug: pelican-setup
 Category: Misc
 Summary: Setting up the blog and things to remember
 
+_November 28, 2015_
 
 Over the past couple of days, I have been working towards getting a blog up and running. There were a couple of different options that I was considering and ultimately I ended up choosing to use [Pelican](http://blog.getpelican.com) as my site generator. I also use GitHub Pages to host my blog for free!
 
