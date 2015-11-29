@@ -38,13 +38,11 @@ aside div#user_meta {
 }
 aside div#user_meta h2 {
     margin: 15px 0 5px 0;
-    text-align: left;
-    font-size: 30px;
+    font-size: 40px;
 }
 aside div#user_meta p {
   margin: 0 0 15px 0;
   font-size: 14px;
-  text-align: left;
   font-style: italic;
 }
 aside div#user_meta ul {
@@ -52,7 +50,6 @@ aside div#user_meta ul {
   padding-left: 0;
   font-size: 17px;
   list-style-type: none;
-  text-align: left;
 }
 aside div#user_meta ul li {
   display: inline;

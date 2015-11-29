@@ -1,4 +1,5 @@
 from fabric.api import *
+from datetime import datetime
 import fabric.contrib.project as project
 import os
 import shutil
@@ -25,6 +26,16 @@ env.github_pages_branch = "gh-pages"
 
 # Port for `serve`
 PORT = 8000
+
+# New Post Template
+TEMPLATE = """
+Title: {title}
+Date: {year}-{month}-{day} {hour}:{minute}
+Category:
+Slug: {slug}
+Summary:
+Status: draft
+"""
 
 def clean():
     """Remove generated files"""
@@ -74,6 +85,24 @@ def cf_upload():
               '-U {cloudfiles_username} '
               '-K {cloudfiles_api_key} '
               'upload -c {cloudfiles_container} .'.format(**env))
+
+def newpost(title):
+    today = datetime.today()
+    slug = title.lower().strip().replace(' ', '_')
+    f_create = "content/{}{:0>2}{:0>2}_{}.md".format(
+        today.year, today.month, today.day, slug)
+    t = TEMPLATE.strip().format(title=title,
+                                year=today.year,
+                                month=today.month,
+                                day=today.day,
+                                hour=today.hour,
+                                minute=today.minute,
+                                slug=slug)
+    with open(f_create, 'w') as w:
+         w.write(t)
+    return t
+    print("File created -> " + f_create)
+    
 
 @hosts(production)
 def publish():
