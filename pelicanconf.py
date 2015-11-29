@@ -35,6 +35,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# Google Analytics
+GOOGLE_ANALYTICS = 'UA-70808160-1'
+
 # Blogroll
 # LINKS = (('You can modify those links in your config file', '#'),)
 
