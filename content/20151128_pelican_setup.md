@@ -29,5 +29,66 @@ With these things in mind, I decided to jump right in and start setting up my bl
 
 As I was following some of the resources mentioned earlier, I realized that it was a great opportunity for me to also learn more about other technologies as well. For example, I read up on GitHub submodules because Fedora's post mentioned initiaizing the output directory as a submodule. I am getting my hands dirty with Markdown because I am using Markdown to write these blog posts and pages. Additionally, HTML and CSS are relevant as well because I am learning to customize my blog. Therefore, all in all, things seem to be going pretty smoothly and I am excited to see what else I can do with this site!
 
+### Customization
+#### New Posts
+In order to get more familiar with the workings of the platform/ try to customize what I was doing, I decided to write my own function to help speed up the process of writing a new blog. Pelican makes this quite simple with the fabfile.py, which allows you to create new functions for anything that you may want to customize.
+
+In my case, I wanted to be able to create new posts from the command line. So by typing the following I can now create a new Markdown file in my content folder with the title, slug, date, etc. preformatted.
+```bash
+fab newpost:"title of my post"
+```
+The code that makes this happen is just a simple function that fills in a prespecified template.
+
+```python
+TEMPLATE = """
+Title: {title}
+Date: {year}-{month}-{day} {hour}:{minute}
+Category:
+Slug: {slug}
+Summary:
+Status: draft
+"""
+```
+```python
+def newpost(title):
+    today = datetime.today()
+    slug = title.lower().strip().replace(' ', '_')
+    f_create = "content/{}{:0>2}{:0>2}_{}.md".format(
+        today.year, today.month, today.day, slug)
+    t = TEMPLATE.strip().format(title=title,
+                                year=today.year,
+                                month=today.month,
+                                day=today.day,
+                                hour=today.hour,
+                                minute=today.minute,
+                                slug=slug)
+    with open(f_create, 'w') as w:
+         w.write(t)
+    return t
+    print("File created -> " + f_create)
+```
+#### Themes
+I also wanted to experiment with HTML/ CSS and modify the themes that I was using on my blog. I started with the [SVBHACK](https://github.com/gfidente/pelican-svbhack) theme but did not really like that the index and archives links were at the top of the page, which seemed to clutter the simplicity of the page. This was a pretty simple customization that I fixed by changing some of the HTML template code to move the links around but now the top of the page is clean!
+
+Original:
+
+![original index and archives](/images/index_archives_orig.png)
+
+Modified:
+
+![new archives](/images/archives_new.png)
+
+I was also interested in customizing the color of the side column and so that took some time digging through the style sheet to make it look the way I wanted. Anyways, now things seem to be the way I want them and I hope that they don't break.
+
+### Writing and Viewing
+Pelican actually makes it surprisingly simple to write and view what has been written.
+
+With the function that I wrote above, I can now create first drafts pretty quickly, then when I want to see the post on my blog, Pelican allows for a local server to be created to view the changes. What is most awesome is that if I use
+
+```bash
+make devserver
+```
+I can actually have the page regenerate each time with new content and all I have to do is refresh the page. So now I can make sure that everything is formatted correctly before I publish my posts.
+
 ### Final Thoughts
-It may seem that this blog post is rather short and ending prematurely, but I have only started to blog and so I hope that as I learn more about Pelican and blogging I will share more of my learnings and thoughts!
+As I learn more about Pelican and blogging in general, I may update this post to include new information about customizations or features that I learn about!
