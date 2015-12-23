@@ -38,6 +38,9 @@ AUTHOR_FEED_RSS = None
 # Google Analytics
 GOOGLE_ANALYTICS = 'UA-70808160-1'
 
+#DISQUS
+DISQUS_SITENAME = 'jeffwen-blog'
+
 # Blogroll
 # LINKS = (('You can modify those links in your config file', '#'),)
 
