@@ -6,6 +6,8 @@ Summary: Blog post on my entry for the What's Cooking kaggle competition
 
 _December 19, 2015_
 
+*__Update!__: The competition has now ended and I am in 100th place on the public leaderboard out of 1,416 teams/individuals. Top 10% for my first kaggle!*
+
 ### Getting Started
 Ever since I have known about kaggle, I have always seen it as a place where accomplished data scientists and skilled veterans of the machine learning space go to stretch their legs and dominate. However, as I continued to look through the competitions and through the forums where aspiring data scientists were asking a wide variety of questions, I realized that my preconceptions were probably holding me back from learning a lot through practical application. It is definitely one thing to read about algorithms and techniques and quite another to actually implement. Anyways, with that in mind, I figured I would jump in and get started.
 
@@ -32,6 +34,7 @@ To start with, my plan was to (I eventually only had time to do up to number 7, 
     * Some really [legit stuff](http://mlwave.com/kaggle-ensembling-guide/)...
 
 Anyways, the data comes in .json files, which python makes pretty easy to parse with the json package. As an example, the first entry in the data file looks like this
+
 ```python
 {u'cuisine': u'greek',
  u'id': 10259,
@@ -181,8 +184,16 @@ I basically ended up doing a weighted average of my top submission files (which 
 ### Lots to learn
 It has been such a journey starting with importing the .json files to getting (at the time) 40th on the leaderboard. Even though with a few more hours to go in the competition I figure I may drop a few places, I feel like I have gained at least a taste of what it feels like to enter and apply the things that I have learned.
 
-#### Next steps
 In entering this competition I got a chance to apply a lot of things that I had read about. Furthermore, I read **EVEN MORE** things that I didn't get to try out but hope to in the future. I have listed a few take-aways and things to try in the future.
+
+#### *Next steps*
+
+1. Use Levenstein distance to map similar words together (I actually have a function in my [cooking code](https://github.com/jeffwen/Kaggle/blob/master/Whats%20Cooking/cooking.py) that I was going to use, but I never got around to implementing it...)
+2. Use Bayesian Optimization or Random Search to optimize parameter settings
+3. Stack and blend different models
+4. Experiment with other models (i.e. neural networks, xgb (with good parameter tuning))
+
+#### *Take-aways*
 
 1. Parameter tuning is very important and though grid search worked out well this time, its really computationally intensive and in another setting I might not have the luxury to perform this type of exhaustive search. I can try random search, which may be better but a very interesting thing that I read about were two packages called: Spearmint and Hyperopt, which use bayesian optimization to perform the parameter search (read this awesome [blog post](https://jmhessel.github.io/Bayesian-Optimization/) or [this one](http://fastml.com/optimizing-hyperparams-with-hyperopt/) to learn more about parameter tuning and bayesian optimization)
 2. Fitting models is easy, but figuring which model to use and when is difficult
