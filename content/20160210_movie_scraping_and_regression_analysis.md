@@ -9,6 +9,7 @@ _February 10, 2016_
 
 In ths post, I will share a bit about what I have been up to over the past few weeks. I plan on putting up my code soon!
 
+
 # Getting Started
 
 For this project, I wanted to make use of a couple things that I learned at Metis. More specifically, I was interested in using BeautifulSoup, Statsmodels, and Scikit-learn to try and predict total adjusted domestic gross from movie data scraped from [boxofficemojo](http://www.boxofficemojo.com). One of the main objectives of the project was to try and get a sense for how to collect data and make sure that it is in a clean enough format to run analyses on.
