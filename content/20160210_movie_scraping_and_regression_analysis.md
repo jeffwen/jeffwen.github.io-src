@@ -68,11 +68,11 @@ I wanted to create an initial plot to take a look at some of the data and make s
 *  The residuals plot also looks a bit bunched together and definitely looks like there is some heteroscedasticity
 * I decided that it might be good to transform the data to see if it could deal with some of the effect
 
-![Initial Residuals](/img/initial_resids.png)
+![Initial Residuals](/images/initial_resids.png)
 
 After fitting the initial model, the adjusted R-squared was .457, which was not too horrible for a first go. I continued the process of analyzing the shape of the residuals and further transformed variables that seemed to have non-normal residuals. 
 
-![Inital Regression Results](/img/initial_reg.png)
+![Inital Regression Results](/images/initial_reg.png)
 
 ###Bring in more data
 In order to deal with the observations that looked to bunched near 0, I brought in the number of theaters that the movie was released at to calculate the average opening sales per number of theaters.
