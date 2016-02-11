@@ -11,7 +11,7 @@ In ths post, I will share a bit about what I have been up to over the past few w
 
 # Getting Started
 
-For this project, I wanted to make use of a couple things that I learned at Metis. More specifically, I was interested in using BeautifulSoup, Statsmodels, and Scikit-learn to try and predict total adjusted domestic gross from movie data scraped from [boxofficemojo.com](www.boxofficemojo.com). One of the main objectives of the project was to try and get a sense for how to collect data and make sure that it is in a clean enough format to run analyses on.
+For this project, I wanted to make use of a couple things that I learned at Metis. More specifically, I was interested in using BeautifulSoup, Statsmodels, and Scikit-learn to try and predict total adjusted domestic gross from movie data scraped from [boxofficemojo](http://www.boxofficemojo.com). One of the main objectives of the project was to try and get a sense for how to collect data and make sure that it is in a clean enough format to run analyses on.
 
 One of the things that I realized while participating in kaggle competitions is that a lot of the time the data comes in very nice formats. Most of the major data errors are already taken care of and there isn't much if any scraping that needs to be done to get the data (I can just download the data). Therefore, I figured it would be nice to get a sense for how to web scrape then clean the data myself to understand the process more completely.
 
@@ -50,6 +50,7 @@ The last bit of scraping I did was to get the daily sales information and the da
 The next focus was to clean the data and start thinking about how to get the model up and running. I started by importing the dataframes that I had created into my Python environment.
 
 Then I  worked with the variables to make sure that they were able to be processed
+
 * Turning the date strings into datetime objects
 * Turning the runtime string from "1 hr. 52 min." to integer format
 * Getting the Month, Year, and Day for each datetime object
