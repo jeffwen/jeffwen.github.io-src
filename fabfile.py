@@ -31,6 +31,7 @@ PORT = 8000
 TEMPLATE = """
 Title: {title}
 Date: {year}-{month}-{day} {hour}:{minute}
+Author:
 Category:
 Slug: {slug}
 Summary:
