@@ -12,7 +12,7 @@ Let's talk about remote servers, census data, classification models, and data vi
 _Warning:_ This post will be a bit lengthy and cover some details that might not be that interesting but I am also using this post as a way to capture the process so I don't forget things.
 ![Census Logo](/images/census-logo.png)
 ### Summary
-In this post, I will discuss some of the deisgn decisions that I made while working on this project and also go through some of the set up required to get things up and running. To start off with the goal of this project was to take census data and use it and visualize it in an interesting way.
+In this post, I will discuss some of the design decisions that I made while working on this project and also go through some of the set up required to get things up and running. To start off with the goal of this project was to take census data and use it and visualize it in an interesting way.
 
 While I did not really have a clear idea when I started the project, I worked with a couple of my teammates to come up with an overall plan. We had to use [census data](https://archive.ics.uci.edu/ml/datasets/Census+Income) and also had to think about how to tell a story with that data using classification models and D3.js. With this said, we really racked our brains to try to figure out how to use the data in an interesting way. I think we eventually did and will share more in the upcoming 2 posts!
 

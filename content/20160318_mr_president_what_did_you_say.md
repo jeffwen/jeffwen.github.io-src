@@ -104,7 +104,7 @@ If you took a look at the HTML page that I linked to at the beginning with the n
 
 So how did I generate those clusters? Well, let me start off by talking about how I got to clustering. 
 
-####_Latent Semantic Indexing_
+#### Latent Semantic Indexing
 One of the interesting techniques that I wanted to use was [latent semantic indexing](https://en.wikipedia.org/wiki/Latent_semantic_indexing). Very basically, this technique uses matrix factorization (singular value decomposition) to map the documents into a vector space, then we specify the rank (kind of like the number of concepts that we want to keep). Afterwards, the passed in term frequency matrix is factorized into a term concept matrix, a square singular value matrix, and a concept document matrix. The concept document matrix can be thought of as a matrix that captures the latent 'concepts' within the documents.
 
 I used the concept document matrix and computed the cosine similarity between each of the different vectors (in this case each president had his own vector that signified the concepts in his speeches and press releases). Then I created the connections by simply setting the threshold to >= 0.75 (I experimented with this for a bit to see how the connections would turn out; a bit arbitrary, but if I had more time I would have kept all connections and used the weight/width of the connection to represent the cosine similarity).
