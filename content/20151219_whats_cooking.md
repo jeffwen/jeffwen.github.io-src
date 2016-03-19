@@ -6,7 +6,7 @@ Summary: Blog post on my entry for the What's Cooking kaggle competition
 
 _December 19, 2015_
 
-*__Update!__: The competition has now ended and I am in 100th place on the public leaderboard out of 1,416 teams/individuals. Top 10% for my first kaggle!*
+*__Update!__: The competition has now ended and I am in 87th place on the public leaderboard out of 1,388 teams/individuals. Top 6% for my first kaggle!*
 
 ### Getting Started
 Ever since I have known about kaggle, I have always seen it as a place where accomplished data scientists and skilled veterans of the machine learning space go to stretch their legs and dominate. However, as I continued to look through the competitions and through the forums where aspiring data scientists were asking a wide variety of questions, I realized that my preconceptions were probably holding me back from learning a lot through practical application. It is definitely one thing to read about algorithms and techniques and quite another to actually implement. Anyways, with that in mind, I figured I would jump in and get started.
