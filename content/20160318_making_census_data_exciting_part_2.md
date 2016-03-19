@@ -7,9 +7,9 @@ Summary: Getting data out of a remote server and show results on a D3 dashboard
 
 _March 18, 2016_
 
-In this post, I discuss the results of the work from the [first post](http://jeffwen/github.io/making_census_data_exciting_part_1/). That first post was a bit lengthy and went into the details of getting the PostgreSQL set up, but that was all necessary to be able to query the data to set up the [dashboard](/dashboard.html) (a screenshot is shown below, you can click on multiple things at once...cross filter charts)!
+In this post, I discuss the results of the work from the [first post](/2016/02/27/making_census_data_exciting_part_1). That first post was a bit lengthy and went into the details of getting the PostgreSQL set up, but that was all necessary to be able to query the data to set up the [dashboard](/html/dashboard.html) (a screenshot is shown below, you can click on multiple things at once...cross filter charts)!
 
-[![Dashboard](/images/dashboard.png)](/dashboard.html)
+[![Dashboard](/images/dashboard.png)](/html/dashboard.html)
 
 ### Problem Statement
 So the goal of the project was to see if [census data](https://archive.ics.uci.edu/ml/datasets/Census+Income) could be used in an interesting manner. While discussing possible problems that could be solved, our team figured that it would be interesting to use the data as if we had just acquired a freelance employment company. Let me make this more clear:
@@ -31,7 +31,7 @@ For this, Psycopg2 was the best tool as it allowed for a pretty straight forward
 # input must be strings
 def query_database(user, dbname, password, host, port):
     '''
-    dbname: databse name
+    dbname: database name
     user: username
     password: password for the user
     host: public dns
