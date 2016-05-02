@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+
 AUTHOR = u'Jeff Wen'
 SITENAME = u'Jeff Wen'
 SITEURL = 'http://jeffwen.github.io'
