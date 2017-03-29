@@ -74,7 +74,7 @@ main header p {
   text-transform: uppercase;
 }
 main article {
-  max-width: 70em;
+  max-width: 50em;
   padding: 40px;
 }
 main article div.article_title {
@@ -174,7 +174,7 @@ main div#ending_message {
     overflow-y: hidden;
   }
   main article {
-    max-width: 640px;
+    max-width: 50em;
   }
   main header {
     border-top: 0;
