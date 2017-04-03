@@ -12,7 +12,7 @@ _March 28, 2017_
 
 In this project, we classify [German traffic signs](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). The code for this project can be found in this [IPython notebook](https://github.com/jeffwen/sdcnd_traffic_sign/blob/master/Traffic_Sign_Classifier.ipynb).
 
-The objective of this project is to ultimately design, train, and test a convolutional neural netowk (CNN) to see if we can accurately classify the traffic signs. Specifically, with image classification tasks the variability of input images might cause the model to perform poorly. In order to remedy this situation, we will consider preprocessing steps to ensure that the model is robust to varying input images. Furthermore, depending on how the model performs, we may need to consider regularization steps such as dropouts or L2 regularization. 
+The objective of this project is to ultimately design, train, and test a convolutional neural network (CNN) to see if we can accurately classify the traffic signs. Specifically, with image classification tasks the variability of input images might cause the model to perform poorly. In order to remedy this situation, we will consider preprocessing steps to ensure that the model is robust to varying input images. Furthermore, depending on how the model performs, we may need to consider regularization steps such as dropouts or L2 regularization. 
 
 To start with, I use the [LeNet-5 architecture](http://yann.lecun.com/exdb/lenet/) that was first published by Yann Lecun's lab in 1998. Eventually, I augmented the training set with rotated and zoomed images, normalized images, and included dropouts for the fully connected layers. This led to a final model that achieved ~95% on the validation set and ~94% on the test set. 
 
