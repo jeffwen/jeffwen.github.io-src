@@ -6,11 +6,11 @@ from __future__ import unicode_literals
 AUTHOR = u'Jeff Wen'
 SITENAME = u'Jeff Wen'
 SITEURL = 'http://jeffwen.github.io'
-# SITEURL = 'http://localhost:8000'
+#SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
-TIMEZONE = 'America/Los_Angeles'
+TIMEZONE = 'America/New_York'
 
 # Default language and date formatting
 DEFAULT_LANG = u'en'
@@ -56,7 +56,7 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 # Theme specfic modifications for the blog
-THEME = '/Users/Jeffwen/Blog/ghblog/pelican-themes/svbhack'
+THEME = '/Users/jwen/Blog/ghblog/pelican-themes/svbhack'
 TAGLINE = 'aspiring data scientist, problem solver, wannabe tinkerer'
 USER_LOGO_URL = SITEURL + '/images/jeff_logo.png'
 
