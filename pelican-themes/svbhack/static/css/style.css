@@ -222,8 +222,10 @@ main div.article_title h3 {
     margin-top:0.5em;
     margin-bottom:0.5em;
 }
-  main article {
-      max-width: 50em;
+main article {
+    max-width: 50em;
+}
+  main article.index_post_container {
       height: 140px;
   }
   main header {
