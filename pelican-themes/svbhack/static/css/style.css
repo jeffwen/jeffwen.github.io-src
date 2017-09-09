@@ -23,6 +23,10 @@ img {
   max-width: 100%;
 }
 
+img#user_logo {
+  max-width: 50%;
+}
+
 tr:hover {background-color: #f5f5f5}
 
 th, td {
@@ -87,11 +91,23 @@ main article {
   max-width: 50em;
   padding: 40px;
 }
+#index_page {
+      text-align: center;
+  }
+main div img.centered_article_image {
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    float: none;
+    margin-top: 0px;
+}
 main article div.article_title {
-    font-size: 30px
+    font-size: 30px;
 }
 main article div.article_text {
-  line-height: 1.375em;
+    line-height: 1.375em;
 }
 main article div.article_text a {
   text-decoration: underline;
@@ -156,7 +172,11 @@ main div#ending_message {
   color: #999999;
   font-size: 10px;
 }
+
 @media screen and (min-width: 1024px) {
+img#user_logo {
+  max-width: 100%;
+}
   aside {
     width: 20%;
     height: 100%;
@@ -178,13 +198,33 @@ main div#ending_message {
   main {
     width: 80%;
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 25%;
     overflow-x: hidden;
     overflow-y: hidden;
   }
+main div img.centered_article_image{
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-top: -30px;
+  object-fit: cover;
+}
+.article_title#index_page{
+    margin-left: 240px;
+    text-align:left;
+}
+.article_text#index_page{
+    margin-left: 240px;
+    text-align:left;
+}
+main div.article_title h3 {
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
   main article {
-    max-width: 50em;
+      max-width: 50em;
+      height: 140px;
   }
   main header {
     border-top: 0;

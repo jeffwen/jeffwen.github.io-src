@@ -4,6 +4,7 @@ Author: Jeff Wen
 Category: Python
 Slug: mr_president_what_did_you_say
 Summary: Natural language processing, latent semantic indexing, latent dirichlet allocation, and D3.js visualizations!
+Index_image_url:/images/president_index.png
 
 _March 18, 2016_
 

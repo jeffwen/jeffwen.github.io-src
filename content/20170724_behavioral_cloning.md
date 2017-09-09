@@ -3,7 +3,8 @@ Date: 2017-7-14 11:07
 Author: Jeff Wen
 Category: Python
 Slug: behavioral_cloning
-Summary: Using convolutional neural networks to clone driving behavior recorded using a driving simulator
+Summary: Cloning driving behavior with convolutional neural networks 
+Index_image_url: /images/sdcnd/simulator_car.png
 
 _July 24, 2017_
 

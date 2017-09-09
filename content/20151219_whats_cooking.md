@@ -3,6 +3,7 @@ Date: 2015-12-19 11:01
 Category: python
 Slug: whats_cooking
 Summary: Blog post on my entry for the What's Cooking kaggle competition
+Index_image_url:/images/whats_cooking_index.png
 
 _December 19, 2015_
 

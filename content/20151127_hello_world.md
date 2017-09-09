@@ -4,6 +4,7 @@ Author: Jeff Wen
 Category: Misc
 Slug: hello-world
 Summary: First blog post
+Index_image_url:/images/hello_world_index.png
 
 _November 27, 2015_
 

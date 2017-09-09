@@ -57,7 +57,7 @@ DEFAULT_PAGINATION = 10
 
 # Theme specfic modifications for the blog
 THEME = '/Users/jwen/Blog/ghblog/pelican-themes/svbhack'
-TAGLINE = 'aspiring data scientist, problem solver, wannabe tinkerer'
+TAGLINE = 'data scientist, problem solver, tinkerer'
 USER_LOGO_URL = SITEURL + '/images/jeff_logo.png'
 
 

@@ -4,6 +4,7 @@ Author: Jeff Wen
 Category: Python
 Slug: making_census_data_exciting_part_2
 Summary: Getting data out of a remote server and show results on a D3 dashboard
+Index_image_url:/images/census_2_index.png
 
 _March 18, 2016_
 

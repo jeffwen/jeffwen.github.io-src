@@ -4,6 +4,7 @@ Author: Jeff Wen
 Category: Python
 Slug: making_census_data_exciting_part_1
 Summary: Setting up the AWS EC2 used to store census data and also discussing some project design choices
+Index_image_url:/images/census_1_index.png
 
 _February 27, 2016_
 

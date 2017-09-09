@@ -4,6 +4,7 @@ Author: Jeff Wen
 Category: Python
 Slug: lane_finding
 Summary: Color selection, region masking, canny edge detection, and hough transformation to find lane lines
+Index_image_url:/images/sdcnd/lane_finding_index.png
 
 _February 23, 2017_
 

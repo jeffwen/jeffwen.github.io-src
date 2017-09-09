@@ -4,6 +4,7 @@ Author: Jeff Wen
 Slug: pelican-setup
 Category: Misc
 Summary: Setting up the blog and things to remember
+Index_image_url:/images/setup_blog_index.png
 
 _November 28, 2015_
 

@@ -4,6 +4,7 @@ Author: Jeff Wen
 Category: Python
 Slug: advanced_lane
 Summary: Using computer vision techniques to refine the identification of lane lines in both images and video feeds
+Index_image_url:/images/sdcnd/advanced_lane_finding_index.png
 
 _June 18, 2017_
 

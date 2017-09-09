@@ -4,6 +4,8 @@ Author: Jeff Wen
 Category: Python
 Slug: visaurant
 Summary: Using computer vision techniques to visually filter and search through images
+Index_image_url:/images/visaurant_index.png
+
 
 _May 02, 2016_
 

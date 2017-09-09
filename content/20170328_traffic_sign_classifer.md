@@ -3,7 +3,8 @@ Date: 2017-3-28 20:41
 Author: Jeff Wen
 Category: Python
 Slug: traffic_signs
-Summary: Using a convolutional neural network (LeNet architecture) to classify traffic signs
+Summary: Classifying traffic signs with convolutional neural networks (LeNet architecture)
+Index_image_url:/images/sdcnd/traffic_sign_index.png
 
 _March 28, 2017_
 

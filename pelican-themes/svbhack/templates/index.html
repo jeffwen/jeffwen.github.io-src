@@ -2,10 +2,21 @@
 {% block content %}
 {% for article in articles_page.object_list %}
 <article>
-  <div class="article_title">
+  <div class="article_image_container" id="index_page">
+    {% if article.index_image_url %}
+    <a href="{{ SITEURL }}/{{ article.url }}">
+      <img class="centered_article_image" src="{{ SITEURL }}/{{ article.index_image_url }}">
+    </a>
+    {% else %}
+    <a href="{{ SITEURL }}/{{ article.url }}">
+      <img class="centered_article_image" src="{{ SITEURL }}/images/placeholder.png">
+    </a>
+    {% endif %}
+  </div>
+  <div class="article_title" id="index_page">
     <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
   </div>
-  <div class="article_text">
+  <div class="article_text" id="index_page">
     {{ article.summary }}
   </div>
 </article>

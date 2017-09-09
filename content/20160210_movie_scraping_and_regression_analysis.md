@@ -4,6 +4,7 @@ Category:
 Author: Jeff Wen
 Slug: movie_scraping_and_regression_analysis
 Summary: Scraping movies and building regression models to predict total adjusted domestic gross
+Index_image_url:/images/initial_reg.png
 
 _February 10, 2016_
 

@@ -4,10 +4,10 @@ Author: Jeff Wen
 Category: Python
 Slug: vehicle_detection
 Summary: Computer vision and machine learning for vehicle identification and tracking
+Index_image_url: /images/sdcnd/vehicle_detection_index.png
 
 _August 16, 2017_
 
-# Vehicle Detection
 In this project, the main goal was to use computer vision and machine learning techniques to identify and track vehicles in images and video feeds. Also, take a look at the [Jupyter Notebook](https://github.com/jeffwen/sdcnd_vehicle_detection/blob/master/Vehicle%20Detection.ipynb) for more details. Check out the final video output [here](https://vimeo.com/221974847).
 
 Specifically, the project consisted of the following steps:
