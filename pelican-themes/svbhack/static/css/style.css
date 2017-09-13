@@ -97,9 +97,7 @@ main article {
 main div img.centered_article_image {
     width: 200px;
     height: 200px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    object-fit: cover;
     float: none;
     margin-top: 0px;
 }
