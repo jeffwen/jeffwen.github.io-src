@@ -1,0 +1,15 @@
+.picture {
+    width: 180px;
+    height: 180px;
+    background-position: center center;
+    background-size: cover;
+    display:block;
+}
+
+.picture.gigante {
+  width: 360px;
+  height: 360px;
+  background-position: center center;
+  background-size: cover;
+  display:block;
+}

@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css">
 
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <!-- <script src="/theme/typed.js-master/js/typed.js"></script> -->
@@ -71,6 +72,23 @@
 <!--      } -->
 
 <!--      </style> -->
+
+{% if article %}
+    {% if article.stylesheets %}
+        {% for stylesheet in article.stylesheets %}
+{{ stylesheet }}
+        {% endfor %}
+    {% endif %}
+{% endif %}
+
+{% if page %}
+    {% if page.stylesheets %}
+        {% for stylesheet in page.stylesheets %}
+{{ stylesheet }}
+        {% endfor %}
+    {% endif %}
+{% endif %}
+
 </head>
 
 <body>
@@ -129,5 +147,54 @@
     </div>
   </main>
   {% include "modules/idl.html" %}
+
+<!-- automatically include javasccript -->
+  {% if article %}
+    {% if article.javascripts %}
+        {% for javascript in article.javascripts %}
+{{ javascript }}
+        {% endfor %}
+    {% endif %}
+{% endif %}
+
+{% if page %}
+    {% if page.javascripts %}
+        {% for javascript in page.javascripts %}
+{{ javascript }}
+        {% endfor %}
+    {% endif %}
+{% endif %}
+  
+  <script>
+<!-- setting up the theater view box for the individual images -->
+$('.grid').magnificPopup({
+	delegate: 'a',
+        type: 'image',
+closeBtnInside: false,
+	gallery: {
+		enabled: true,
+		navigateByImgClick: true,
+		preload: [1,2]
+	}
+});
+
+<!-- setting up the isotope grid for the photo gallery images -->
+var $grid = $('.grid').isotope({
+itemSelector: '.picture',
+    masonry:{
+columnWidth: 180,
+gutter:0
+    }
+});
+
+$grid.on("mouseover mouseout",".picture",function() {
+  // change size of item by toggling gigante class
+  $(this).toggleClass('gigante');
+  $grid.isotope('layout');
+});
+
+  </script>
+ 
 </body>
+
 </html>

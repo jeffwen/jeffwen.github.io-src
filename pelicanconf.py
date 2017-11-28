@@ -60,4 +60,10 @@ THEME = '/Users/jwen/Blog/ghblog/pelican-themes/svbhack'
 TAGLINE = 'data scientist, problem solver, tinkerer'
 USER_LOGO_URL = SITEURL + '/images/jeff_logo.png'
 
+# Plugins
+PLUGIN_PATHS = ["plugins"]
+PLUGINS = ["gallery","pelican_javascript"]
+
+# Gallery Path
+GALLERY_PATH = 'images/gallery/'
 

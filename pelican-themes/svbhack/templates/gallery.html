@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}&ndash; {{ page.title }}{% endblock %}
+
+{% block content %}
+<article>
+  <div class="article_title">
+    <h3><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></h3>
+  </div>
+
+	<div class="grid">
+
+	  {% for album, images in page.gallery.items()%}
+          {% for image in images %}
+          
+	  {% set outer_loop = loop %}
+	
+            <div class="photo_gallery">
+                <a class="{{ album }} cboxElement picture" id="{{ outer_loop.index0 }}" href="{{ SITEURL }}/images/gallery/{{album}}/{{ image }}" style="background-image:url({{ SITEURL }}/images/gallery/{{album}}/{{ image }})"></a>
+                <span class="gallery_overlay">
+                  <span class="info">
+                    <h2></h2>
+                  </span>
+                </span>
+
+	</div>
+	    {% endfor %}
+	 {% endfor %}
+
+	</div>
+  
+</article>
+{% endblock %}
