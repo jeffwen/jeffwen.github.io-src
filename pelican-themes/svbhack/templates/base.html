@@ -6,10 +6,6 @@
   <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/css/style.less">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
   -->
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css">
 
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <!-- <script src="/theme/typed.js-master/js/typed.js"></script> -->
@@ -73,22 +69,6 @@
 
 <!--      </style> -->
 
-{% if article %}
-    {% if article.stylesheets %}
-        {% for stylesheet in article.stylesheets %}
-{{ stylesheet }}
-        {% endfor %}
-    {% endif %}
-{% endif %}
-
-{% if page %}
-    {% if page.stylesheets %}
-        {% for stylesheet in page.stylesheets %}
-{{ stylesheet }}
-        {% endfor %}
-    {% endif %}
-{% endif %}
-
 </head>
 
 <body>
@@ -148,6 +128,28 @@
   </main>
   {% include "modules/idl.html" %}
 
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css">
+  
+
+{% if article %}
+    {% if article.stylesheets %}
+        {% for stylesheet in article.stylesheets %}
+{{ stylesheet }}
+        {% endfor %}
+    {% endif %}
+{% endif %}
+
+{% if page %}
+    {% if page.stylesheets %}
+        {% for stylesheet in page.stylesheets %}
+{{ stylesheet }}
+        {% endfor %}
+    {% endif %}
+  {% endif %}
+  
 <!-- automatically include javasccript -->
   {% if article %}
     {% if article.javascripts %}
