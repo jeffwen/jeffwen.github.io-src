@@ -15,7 +15,8 @@
 	  {% set outer_loop = loop %}
 	
             <div class="photo_gallery">
-                <a class="{{ album }} cboxElement picture" id="{{ outer_loop.index0 }}" href="{{ SITEURL }}/images/gallery/{{album}}/{{ image }}" style="background-image:url({{ SITEURL }}/images/gallery/{{album}}/{{ image }})"></a>
+              <!-- <a class="{{ album }} cboxElement picture" id="{{ outer_loop.index0 }}" style="background-image:url({{ SITEURL }}/images/gallery/{{album}}/{{ image }})"></a> -->
+                              <a class="{{ album }} cboxElement picture" id="{{ outer_loop.index0 }}" href="{{ SITEURL }}/images/gallery/{{album}}/{{ image }}" style="background-image:url({{ SITEURL }}/images/gallery/{{album}}/{{ image }})"></a>
                 <span class="gallery_overlay">
                   <span class="info">
                     <h2></h2>

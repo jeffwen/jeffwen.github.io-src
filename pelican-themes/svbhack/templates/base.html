@@ -165,7 +165,8 @@
     {% endif %}
 {% endif %}
   
-  <script>
+<script>
+
 <!-- setting up the theater view box for the individual images -->
 $('.grid').magnificPopup({
 	delegate: 'a',
@@ -175,7 +176,7 @@ closeBtnInside: false,
 		enabled: true,
 		navigateByImgClick: true,
 		preload: [1,2]
-	}
+}
 });
 
 <!-- setting up the isotope grid for the photo gallery images -->
@@ -187,11 +188,11 @@ gutter:0
     }
 });
 
-$grid.on("mouseover mouseout",".picture",function() {
-  // change size of item by toggling gigante class
-  $(this).toggleClass('gigante');
-  $grid.isotope('layout');
-});
+<!-- $grid.on("mouseenter mouseleave",".picture",function() { -->
+<!--   // change size of item by toggling gigante class -->
+<!--   $(this).toggleClass('gigante'); -->
+<!--   $grid.isotope('layout'); -->
+<!-- }); -->
 
   </script>
  
