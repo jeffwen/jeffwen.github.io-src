@@ -171,13 +171,13 @@ main div#ending_message {
   font-size: 10px;
 }
 
-.grid {
+div.grid {
   transform:translate3d(0,0,0);
   -webkit-transform:translate3d(0,0,0);
   -moz-transform:translate3d(0,0,0);
 }
 
-.photo_gallery {
+main article div.grid div.photo_gallery {
     display:inline-block;
     text-align:center;
 }
@@ -259,6 +259,6 @@ main article {
   }
 }
 
-.photo_gallery {
+main article div.grid div.photo_gallery {
     display:block;
 }

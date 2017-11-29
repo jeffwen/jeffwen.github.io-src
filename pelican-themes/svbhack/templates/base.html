@@ -10,6 +10,10 @@
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <!-- <script src="/theme/typed.js-master/js/typed.js"></script> -->
 
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono"> 
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="{{ AUTHOR }}">
@@ -126,11 +130,7 @@
       <p>&copy; {{ AUTHOR }}. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. &brvbar; <a href="{{ SITEURL }}/archives.html">Archives</a> {% if INTERNET_DEFENSE_LEAGUE %}&brvbar; Member of the <a href="http://internetdefenseleague.org">Internet Defense League</a>.{% endif %}</p>
     </div>
   </main>
-  {% include "modules/idl.html" %}
-
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">  
+  {% include "modules/idl.html" %} 
 
 {% if article %}
     {% if article.stylesheets %}
