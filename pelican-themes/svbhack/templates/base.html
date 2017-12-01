@@ -72,7 +72,14 @@
 <!--      } -->
 
 <!--      </style> -->
-
+<!-- preload images for the gallery page with lower priority -->
+{% if page and page.gallery%}
+{% for album, images in page.gallery.items()%}
+{% for image in images %}
+<link rel="preload" href="https://s3.amazonaws.com/jeffwen/photography/{{ image }}.jpg" as="image">
+{% endfor %}
+{% endfor %}
+{% endif %}
 </head>
 
 <body>
@@ -132,6 +139,7 @@
   </main>
   {% include "modules/idl.html" %} 
 
+<!-- automatically include stylesheets if there are any -->
 {% if article %}
     {% if article.stylesheets %}
         {% for stylesheet in article.stylesheets %}
