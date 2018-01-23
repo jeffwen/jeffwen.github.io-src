@@ -115,7 +115,7 @@ A better implementation would run the HOG extraction once and reuse the extracte
 
 ![alt text][vehicle_final_efficient]
 
-In order to deal with the false positives, we can use count the number of times that a pixel is contained within a bounding box and use that to create a heatmap of which pixels are most likely to be of a vehicle.
+In order to deal with the false positives, we can count the number of times that a pixel is contained within a bounding box and use that to create a heatmap of which pixels are most likely to be of a vehicle.
 
 ![alt text][vehicle_heatmap]
 
